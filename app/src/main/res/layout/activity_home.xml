@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background_image"
+    tools:context=".StartingActivities.HomeActivity">
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/todo21"
+        android:src="@drawable/collegelogo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="410dp"
+        android:layout_height="62dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/home"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:paddingBottom="30sp"/>
+
+    <Button
+        android:id="@+id/findCourse"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:backgroundTint="@color/white"
+        android:text="@string/find_courses"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#2988D9"/>
+
+    <Button
+        android:id="@+id/image"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:text="@string/images"
+        android:textColor="#2988D9"
+        android:textSize="20sp"/>
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="350dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="100sp"
+        android:layout_marginRight="100sp"
+        android:backgroundTint="@color/white"
+        android:text="@string/logout"
+        android:textColor="#2988D9"/>
+</LinearLayout>

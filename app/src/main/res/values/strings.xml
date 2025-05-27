@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Dev International College</string>
+    <string name="todo">TODO</string>
+    <string name="welcome">WELCOME</string>
+    <string name="college">College</string>
+    <string name="dev">Dev</string>
+    <string name="international">International</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="about_us">About-us</string>
+    <string name="login2">Login</string>
+    <string name="emailreg">Email</string>
+    <string name="already_have_an_account">Already Have an Account ?</string>
+    <string name="registration">REGISTRATION</string>
+    <string name="aboutfirst">Please, if you use this application, then the user of the application can be done by the user-interface button or else the application will not work properly and the chances of crash can also increase.</string>
+    <string name="aboutSecond">And if possible, remember your email and password because this application is not so optimized right now that the email and password reset or update</string>
+    <string name="back">BACK</string>
+    <string name="todo2">TODO</string>
+    <string name="home">HOME</string>
+    <string name="find_courses">Find Courses</string>
+    <string name="images">IMAGES</string>
+    <string name="logout">Logout</string>
+    <string name="todo21">TODO</string>
+    <string name="back1">Back</string>
+</resources>

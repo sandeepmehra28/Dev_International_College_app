@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "88490317547",
+    "project_id": "dev-international-colleg-31b2c",
+    "storage_bucket": "dev-international-colleg-31b2c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88490317547:android:b9064b7197ee15bac210ae",
+        "android_client_info": {
+          "package_name": "com.example.devinternationalcollege"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByz412ue5V7SauvEoONVDy0Kl0qtZVq-s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

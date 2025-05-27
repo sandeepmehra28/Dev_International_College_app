@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Bottom layer: The border effect -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="0"
+                android:startColor="#1E75CA"
+                android:centerColor="#1C7AD6"
+                android:endColor="#1A83EA"
+                android:centerX="0.5" />
+            <corners android:radius="20dp" />
+        </shape>
+    </item>
+
+    <!-- Top layer: The white background inset to show border -->
+    <item android:top="2dp" android:bottom="2dp" android:left="2dp" android:right="2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white" />
+            <corners android:radius="18dp" /> <!-- Slightly less to fit inside border -->
+        </shape>
+    </item>
+
+</layer-list>
