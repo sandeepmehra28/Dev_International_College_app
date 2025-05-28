@@ -8,5 +8,5 @@ import retrofit2.http.POST;
 public interface DeleteApiInterface {
     @FormUrlEncoded
     @POST("students_delete_data.php")
-    Call<String> deleteUser(@Field("FIRST-NAME") String name);
+    Call<String> deleteUser(@Field("firstname") String name);  // match this field exactly in PHP
 }
