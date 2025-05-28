@@ -9,6 +9,7 @@ import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import com.example.devinternationalcollege.BAPackage.BASemesterActivity;
 import com.example.devinternationalcollege.BCACourse.bcaYearActivity;
 import com.example.devinternationalcollege.R;
 
@@ -19,14 +20,14 @@ public class CoursesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_courses);
-//        CardView BAClick = findViewById(R.id.cardFC_BA);
-//        BAClick.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent=new Intent(CoursesActivity.this, BASemesterActivity.class);
-//                startActivity(intent);
-//            }
-//        });
+        CardView BAClick = findViewById(R.id.cardFC_BA);
+        BAClick.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(CoursesActivity.this, BASemesterActivity.class);
+                startActivity(intent);
+            }
+        });
         CardView BCAClick = findViewById(R.id.card_BCA);
         BCAClick.setOnClickListener(new View.OnClickListener() {
             @Override

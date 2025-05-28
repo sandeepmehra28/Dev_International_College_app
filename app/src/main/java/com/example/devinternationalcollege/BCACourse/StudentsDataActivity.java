@@ -40,7 +40,7 @@ public class StudentsDataActivity extends AppCompatActivity {
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(StudentsDataActivity.this,bcaYearActivity.class);
+                Intent intent = new Intent(StudentsDataActivity.this,bcaFinalYearActivity.class);
                 startActivity(intent);
                 finish();
             }

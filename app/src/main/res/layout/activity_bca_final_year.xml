@@ -15,20 +15,28 @@
         android:textStyle="bold"
         android:textSize="30sp"
         android:layout_marginTop="50dp"
-        android:textColor="@color/white"
-        />
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/white"/>
+<LinearLayout
+    android:layout_width="350dp"
+    android:layout_height="650dp"
+    android:orientation="vertical"
+    android:layout_marginTop="70dp"
+    android:layout_gravity="center"
+    android:backgroundTint="#BAC2ED"
+    android:background="@drawable/bca_all_year_layout_style">
     <Button
         android:id="@+id/BCAfinalYearClick"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:text="@string/open_syllabus"
-        android:layout_marginTop="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:textColor="#052646"
-        android:backgroundTint="@color/white"
+        android:textColor="#ffff"
+        android:backgroundTint="#051679"
         />
     <Button
         android:id="@+id/BCAfinalYearPracticalClick"
@@ -36,13 +44,12 @@
         android:layout_height="50dp"
         android:text="@string/practical"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
         android:layout_gravity="center"
         android:gravity="center"
-        android:textColor="#052646"
-        android:backgroundTint="@color/white"
-        />
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textColor="#ffff"
+        android:backgroundTint="#051679"/>
     <Button
         android:id="@+id/BCAStudentsData"
         android:layout_width="300dp"
@@ -53,20 +60,20 @@
         android:layout_marginRight="40dp"
         android:layout_gravity="center"
         android:gravity="center"
-        android:textColor="#052646"
-        android:backgroundTint="@color/white"
-        />
+        android:textColor="#ffff"
+        android:backgroundTint="#051679"/>
     <Button
         android:id="@+id/FinalYearBackBtn"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:text="@string/back"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:layout_marginTop="320dp"
+        android:layout_marginTop="300dp"
         android:layout_marginLeft="120dp"
         android:layout_marginRight="120dp"
+        android:layout_gravity="center"
+        android:gravity="center"
         android:backgroundTint="#051679"
         android:textColor="#F4F3F3"
         />
+</LinearLayout>
 </LinearLayout>
