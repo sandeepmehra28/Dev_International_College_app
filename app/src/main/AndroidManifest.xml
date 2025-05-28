@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
+        android:networkSecurityConfig="@xml/network_security_config"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -12,6 +13,36 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DevInternationalCollege"
         tools:targetApi="31">
+        <activity
+            android:name=".BCACourse.DeleteDataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BCACourse.InsertingDataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BCACourse.StudentsDataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BCACourse.bcaFinalPDFActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BCACourse.bcaFinalYearActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BCACourse.bcaSecondPDFActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BCACourse.bcaSecondYearActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BCACourse.bcaFirstPDFActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BCACourse.bcaFirstYearActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BCACourse.bcaYearActivity"
+            android:exported="false" />
         <activity
             android:name=".StartingActivities.CoursesActivity"
             android:exported="false" />

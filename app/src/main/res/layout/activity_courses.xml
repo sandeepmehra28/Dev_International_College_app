@@ -1,10 +1,270 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/courses_background_image"
     tools:context=".StartingActivities.CoursesActivity">
+    <TextView
+        android:id="@+id/titleFindCourseTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/top_courses"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_below="@+id/titleFindCourseTop"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="20dp"
+        android:columnCount="2"
+        android:rowCount="3">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_BCA"
+            android:layout_width="111dp"
+            android:layout_height="56dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="9dp"
+            app:cardElevation="9dp"
+            app:cardUseCompatPadding="true">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:contentDescription="@string/q"
+                    android:src="@drawable/bca_logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/bca"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardFC_BA"
+            android:layout_width="111dp"
+            android:layout_height="56dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="9dp"
+            app:cardElevation="9dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:contentDescription="@string/x"
+                    android:src="@drawable/ba_logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/ba"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardFC_BSC"
+            android:layout_width="111dp"
+            android:layout_height="56dp"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardCornerRadius="9dp"
+            app:cardElevation="9dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:contentDescription="@string/c"
+                    android:src="@drawable/bsc_logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/bsc"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardFC_MA"
+            android:layout_width="111dp"
+            android:layout_height="56dp"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardCornerRadius="9dp"
+            app:cardElevation="9dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:contentDescription="@string/cc"
+                    android:src="@drawable/ma_logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/ma"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardFC_BCOM"
+            android:layout_width="111dp"
+            android:layout_height="56dp"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="9dp"
+            app:cardElevation="9dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:contentDescription="@string/ccc"
+                    android:src="@drawable/bcomlogo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/b_com"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardFC_MSE"
+            android:layout_width="111dp"
+            android:layout_height="56dp"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="9dp"
+            app:cardElevation="9dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:contentDescription="@string/cccc"
+                    android:src="@drawable/msclogo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/ccccc"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+    <Button
+        android:id="@+id/buttonBackintopcourses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="@string/back"
+        android:backgroundTint="#4792DF"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+</RelativeLayout>

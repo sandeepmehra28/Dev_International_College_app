@@ -10,7 +10,8 @@
     <LinearLayout
         android:layout_marginTop="10dp"
         android:orientation="horizontal"
-        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_width="match_parent" >
         <Button
             android:layout_gravity="center"
             android:gravity="center"
@@ -36,6 +37,7 @@
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
         android:layout_height="219dp"
+        android:layout_marginTop="20sp"
         android:layout_gravity="center"
         android:src="@drawable/reg_images" />
     <LinearLayout
