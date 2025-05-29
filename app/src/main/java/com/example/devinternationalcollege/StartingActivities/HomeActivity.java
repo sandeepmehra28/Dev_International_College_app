@@ -2,16 +2,11 @@ package com.example.devinternationalcollege.StartingActivities;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
 import com.example.devinternationalcollege.R;
 
 public class HomeActivity extends AppCompatActivity {
@@ -24,30 +19,21 @@ public class HomeActivity extends AppCompatActivity {
         Button fd = findViewById(R.id.findCourse);
         Button lo = findViewById(R.id.logout);
         Button img = findViewById(R.id.image);
-        fd.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(HomeActivity.this, CoursesActivity.class);
-                startActivity(intent);
-                finish();
-            }
+        fd.setOnClickListener(view -> {
+            Intent intent = new Intent(HomeActivity.this, CoursesActivity.class);
+            startActivity(intent);
+            finish();
         });
-        lo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(HomeActivity.this, "Logout", Toast.LENGTH_SHORT).show();
-                Intent intent =new Intent(HomeActivity.this, LoginActivity.class);
-                startActivity(intent);
-                finish();
-            }
+        lo.setOnClickListener(view -> {
+            Toast.makeText(HomeActivity.this, "Logout", Toast.LENGTH_SHORT).show();
+            Intent intent =new Intent(HomeActivity.this, LoginActivity.class);
+            startActivity(intent);
+            finish();
         });
-        img.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(HomeActivity.this, ImageActivity.class);
-                startActivity(intent);
-                finish();
-            }
+        img.setOnClickListener(view -> {
+            Intent intent = new Intent(HomeActivity.this, ImageActivity.class);
+            startActivity(intent);
+            finish();
         });
     }
 }

@@ -6,7 +6,6 @@ import android.net.Network;
 import android.net.NetworkCapabilities;
 import android.os.Build;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -37,23 +36,15 @@ public class LoginActivity extends AppCompatActivity {
         logBtn=findViewById(R.id.buttonLogin);
         aboutBtn=findViewById(R.id.aboutClick);
         auth= FirebaseAuth.getInstance();
-        newRegister.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
-                startActivity(intent);
-            }
+        newRegister.setOnClickListener(view -> {
+            Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+            startActivity(intent);
         });
-        aboutBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent =new Intent(LoginActivity.this, AboutActivity.class);
-                startActivity(intent);
-            }
+        aboutBtn.setOnClickListener(view -> {
+            Intent intent =new Intent(LoginActivity.this, AboutActivity.class);
+            startActivity(intent);
         });
-        logBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        logBtn.setOnClickListener(view -> {
 //                String txt_email = logemail.getText().toString();
 //                String txt_pass = logpassword.getText().toString();
 //                if (!isConnectedToInternet()) {
@@ -68,22 +59,18 @@ public class LoginActivity extends AppCompatActivity {
 //                }else {
 //                    loginUser(txt_email,txt_pass);
 //                }
-                Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
-                startActivity(intent);
-                finish();
-            }
+            Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+            startActivity(intent);
+            finish();
         });
     }
 
     private void loginUser(String txtEmail, String txtPass) {
-        auth.signInWithEmailAndPassword(txtEmail,txtPass).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
-            @Override
-            public void onSuccess(AuthResult authResult) {
-                Toast.makeText(LoginActivity.this,"Logged in!", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(LoginActivity.this,HomeActivity.class);
-                startActivity(intent);
-                finish();
-            }
+        auth.signInWithEmailAndPassword(txtEmail,txtPass).addOnSuccessListener(authResult -> {
+            Toast.makeText(LoginActivity.this,"Logged in!", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(LoginActivity.this,HomeActivity.class);
+            startActivity(intent);
+            finish();
         });
     }
 

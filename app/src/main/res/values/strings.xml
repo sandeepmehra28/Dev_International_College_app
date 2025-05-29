@@ -86,4 +86,12 @@
     <string name="open_draw_and_paint_semester">Open Draw-and-Paint Semester</string>
     <string name="sdfgh">TODO</string>
     <string name="cvb">TODO</string>
+    <string name="asdfghjk">TODO</string>
+    <string name="subjects">SUBJECTS</string>
+    <string name="eafm">EAFM</string>
+    <string name="abst">ABST</string>
+    <string name="badl">BADL</string>
+    <string name="note_abst_and_badl_not_available_in_this_application">Note: ABST and BADL not available in this application</string>
+    <string name="semester">Semester</string>
+    <string name="semester_sixth">SEMESTER-SIXTH</string>
 </resources>
