@@ -94,4 +94,12 @@
     <string name="note_abst_and_badl_not_available_in_this_application">Note: ABST and BADL not available in this application</string>
     <string name="semester">Semester</string>
     <string name="semester_sixth">SEMESTER-SIXTH</string>
+    <string name="year">YEAR</string>
+    <string name="math">MATH</string>
+    <string name="mathematics">Mathematics</string>
+    <string name="chemistry">Chemistry</string>
+    <string name="physics">PHYSICS</string>
+    <string name="bio">BIO</string>
+    <string name="botany">BOTANY</string>
+    <string name="zoology">ZOOLOGY</string>
 </resources>

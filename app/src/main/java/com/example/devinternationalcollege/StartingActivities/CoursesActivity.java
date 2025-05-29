@@ -11,6 +11,7 @@ import androidx.cardview.widget.CardView;
 import com.example.devinternationalcollege.BAPackage.BASemesterActivity;
 import com.example.devinternationalcollege.BCACourse.bcaYearActivity;
 import com.example.devinternationalcollege.BCOMPackage.BCOMAllSubjectsActivity;
+import com.example.devinternationalcollege.BSCPackage.BSCYearActivity;
 import com.example.devinternationalcollege.R;
 
 public class CoursesActivity extends AppCompatActivity {
@@ -38,14 +39,11 @@ public class CoursesActivity extends AppCompatActivity {
 //                startActivity(intent);
 //            }
 //        });
-//        CardView BSCClick = findViewById(R.id.cardFC_BSC);
-//        BSCClick.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent =new Intent(CoursesActivity.this, BSCYearActivity.class);
-//                startActivity(intent);
-//            }
-//        });
+        CardView BSCClick = findViewById(R.id.cardFC_BSC);
+        BSCClick.setOnClickListener(view -> {
+            Intent intent =new Intent(CoursesActivity.this, BSCYearActivity.class);
+            startActivity(intent);
+        });
 //        CardView MSCClick = findViewById(R.id.cardFC_MSE);
 //        MSCClick.setOnClickListener(new View.OnClickListener() {
 //            @Override
