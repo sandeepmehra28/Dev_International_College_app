@@ -16,6 +16,15 @@
         android:theme="@style/Theme.DevInternationalCollege"
         tools:targetApi="31">
         <activity
+            android:name=".MSCPackage.MSCAllYearPDFActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MSCPackage.MSCYearActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MSCPackage"
+            android:exported="false" />
+        <activity
             android:name=".BSCPackage.BSCFinalPDFActivity"
             android:exported="false" />
         <activity

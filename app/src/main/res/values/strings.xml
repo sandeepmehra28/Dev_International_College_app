@@ -102,4 +102,7 @@
     <string name="bio">BIO</string>
     <string name="botany">BOTANY</string>
     <string name="zoology">ZOOLOGY</string>
+    <string name="asdfghjkert">TODO</string>
+    <string name="pre_year">Pre-Year</string>
+    <string name="final_yeare">Final-Year</string>
 </resources>
