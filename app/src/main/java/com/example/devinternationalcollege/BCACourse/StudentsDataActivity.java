@@ -37,29 +37,16 @@ public class StudentsDataActivity extends AppCompatActivity {
 
         textView = findViewById(R.id.TextViewId);
         Button backBtn = findViewById(R.id.backToBCAActivity);
-        backBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(StudentsDataActivity.this,bcaFinalYearActivity.class);
-                startActivity(intent);
-                finish();
-            }
+        backBtn.setOnClickListener(view -> {
+            Intent intent = new Intent(StudentsDataActivity.this,bcaFinalYearActivity.class);
+            startActivity(intent);
+            finish();
         });
         Button deleteBtn = findViewById(R.id.DeleteDataBtn);
-        deleteBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(StudentsDataActivity.this, DeleteDataActivity.class));
-            }
-        });
+        deleteBtn.setOnClickListener(view -> startActivity(new Intent(StudentsDataActivity.this, DeleteDataActivity.class)));
 
         Button insertDataBtn = findViewById(R.id.InsertDataBtn);
-        insertDataBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(StudentsDataActivity.this, InsertingDataActivity.class));
-            }
-        });
+        insertDataBtn.setOnClickListener(view -> startActivity(new Intent(StudentsDataActivity.this, InsertingDataActivity.class)));
 
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("http://192.168.29.110/DevInterCollProject/")

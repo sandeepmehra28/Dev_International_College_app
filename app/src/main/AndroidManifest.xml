@@ -14,6 +14,27 @@
         android:theme="@style/Theme.DevInternationalCollege"
         tools:targetApi="31">
         <activity
+            android:name=".BCOMPackage.BCOMAllSubjectsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BAPackage.BASEMFOURTHPDFViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BAPackage.BASemesterFourthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BAPackage.BASEMTHIRDPDFViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BAPackage.BASemesterThirdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BAPackage.BASEMSECONDPDFViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BAPackage.BASemesterSecondActivity"
+            android:exported="false" />
+        <activity
             android:name=".BAPackage.BASEMFIRSTPDFViewActivity"
             android:exported="false" />
         <activity

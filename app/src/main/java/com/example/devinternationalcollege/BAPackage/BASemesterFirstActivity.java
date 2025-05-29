@@ -2,15 +2,10 @@ package com.example.devinternationalcollege.BAPackage;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
 import com.example.devinternationalcollege.R;
 
 public class BASemesterFirstActivity extends AppCompatActivity {
@@ -32,13 +27,10 @@ public class BASemesterFirstActivity extends AppCompatActivity {
         setupButton(R.id.phyEduSemBtn, "baphysicaleducation1and2.pdf");
         setupButton(R.id.englishSemBtn, "baenglish1.pdf");
         Button backBtn = findViewById(R.id.backBtn1Subjects);
-        backBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent =new Intent(BASemesterFirstActivity.this, BASemesterActivity.class);
-                startActivity(intent);
-                finish();
-            }
+        backBtn.setOnClickListener(view -> {
+            Intent intent =new Intent(BASemesterFirstActivity.this, BASemesterActivity.class);
+            startActivity(intent);
+            finish();
         });
     }
     private void setupButton(int buttonId, String pdfFileName) {
