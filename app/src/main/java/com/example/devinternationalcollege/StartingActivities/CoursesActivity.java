@@ -2,7 +2,6 @@ package com.example.devinternationalcollege.StartingActivities;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
@@ -13,6 +12,7 @@ import com.example.devinternationalcollege.BAPackage.BASemesterActivity;
 import com.example.devinternationalcollege.BCACourse.bcaYearActivity;
 import com.example.devinternationalcollege.BCOMPackage.BCOMAllSubjectsActivity;
 import com.example.devinternationalcollege.BSCPackage.BSCYearActivity;
+import com.example.devinternationalcollege.MAPackage.MAYearActivity;
 import com.example.devinternationalcollege.MSCPackage.MSCYearActivity;
 import com.example.devinternationalcollege.R;
 
@@ -33,14 +33,11 @@ public class CoursesActivity extends AppCompatActivity {
             Intent intent=new Intent(CoursesActivity.this, bcaYearActivity.class);
             startActivity(intent);
         });
-//        CardView MAClick = findViewById(R.id.cardFC_MA);
-//        MAClick.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent =new Intent(CoursesActivity.this, MAYearActivity.class);
-//                startActivity(intent);
-//            }
-//        });
+        CardView MAClick = findViewById(R.id.cardFC_MA);
+        MAClick.setOnClickListener(view -> {
+            Intent intent =new Intent(CoursesActivity.this, MAYearActivity.class);
+            startActivity(intent);
+        });
         CardView BSCClick = findViewById(R.id.cardFC_BSC);
         BSCClick.setOnClickListener(view -> {
             Intent intent =new Intent(CoursesActivity.this, BSCYearActivity.class);

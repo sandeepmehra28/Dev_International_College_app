@@ -16,6 +16,21 @@
         android:theme="@style/Theme.DevInternationalCollege"
         tools:targetApi="31">
         <activity
+            android:name=".MAPackage.MAFinalYearPDFActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MAPackage.MAFinalYearActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MAPackage.MAPreYearPDFActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MAPackage.MAPreYearActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MAPackage.MAYearActivity"
+            android:exported="false" />
+        <activity
             android:name=".MSCPackage.MSCAllYearPDFActivity"
             android:exported="false" />
         <activity
