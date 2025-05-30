@@ -53,20 +53,14 @@ public class RegisterActivity extends AppCompatActivity {
             } else if (txt_password.length()<6) {
                 Toast.makeText(RegisterActivity.this, "password is too sort!", Toast.LENGTH_SHORT).show();
             }
-            else {
-                registerUser(txt_email,txt_password);
-            }
+            else {registerUser(txt_email,txt_password);}
         });
         exUser.setOnClickListener(view -> {
             Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
-            startActivity(intent);
-            finish();
-        });
+            startActivity(intent);finish();});
         back.setOnClickListener(view -> {
             Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
-            startActivity(intent);
-            finish();
-        });
+            startActivity(intent);finish();});
     }
     private boolean isConnectedToInternet() {
         ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);

@@ -41,7 +41,6 @@ public class BASemesterActivity extends AppCompatActivity {
         });
         backBtn.setOnClickListener(view -> {
             Intent intent=new Intent(BASemesterActivity.this, CoursesActivity.class);
-            startActivity(intent);
-        });
+            startActivity(intent);finish();});
     }
 }

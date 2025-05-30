@@ -14,13 +14,12 @@ import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.devinternationalcollege.R;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.regex.Pattern;
 
 public class LoginActivity extends AppCompatActivity {
+    //they are all data member variables
     Button logBtn,newRegister;
     TextView aboutBtn;
     EditText logemail,logpassword;
@@ -38,65 +37,52 @@ public class LoginActivity extends AppCompatActivity {
         auth= FirebaseAuth.getInstance();
         newRegister.setOnClickListener(view -> {
             Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
-            startActivity(intent);
-        });
+            startActivity(intent);finish();});
         aboutBtn.setOnClickListener(view -> {
             Intent intent =new Intent(LoginActivity.this, AboutActivity.class);
-            startActivity(intent);
-        });
+            startActivity(intent);finish();});
+        //this is for login button include some validations
         logBtn.setOnClickListener(view -> {
-//                String txt_email = logemail.getText().toString();
-//                String txt_pass = logpassword.getText().toString();
-//                if (!isConnectedToInternet()) {
-//                    Toast.makeText(LoginActivity.this, "Please connect your internet", Toast.LENGTH_SHORT).show();
-//                    return;
-//                } else if (txt_email.isEmpty() || txt_pass.isEmpty()) {
-//                    Toast.makeText(LoginActivity.this,"Please fill all the fields",Toast.LENGTH_SHORT).show();
-//                }else if(!isValidEmail(txt_email)){
-//                    Toast.makeText(LoginActivity.this,"please enter a valid email!",Toast.LENGTH_SHORT).show();
-//                } else if (txt_pass.length()<6) {
-//                    Toast.makeText(LoginActivity.this,"password is too sort!",Toast.LENGTH_SHORT).show();
-//                }else {
-//                    loginUser(txt_email,txt_pass);
-//                }
-            Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
-            startActivity(intent);
-            finish();
-        });
+                String txt_email = logemail.getText().toString();
+                String txt_pass = logpassword.getText().toString();
+                if (!isConnectedToInternet()) {
+                    Toast.makeText(LoginActivity.this, "Please connect your internet", Toast.LENGTH_SHORT).show();
+                    return;
+                } else if (txt_email.isEmpty() || txt_pass.isEmpty()) {
+                    Toast.makeText(LoginActivity.this,"Please fill all the fields",Toast.LENGTH_SHORT).show();
+                }else if(!isValidEmail(txt_email)){
+                    Toast.makeText(LoginActivity.this,"please enter a valid email!",Toast.LENGTH_SHORT).show();
+                } else if (txt_pass.length()<6) {
+                    Toast.makeText(LoginActivity.this,"password is too sort!",Toast.LENGTH_SHORT).show();
+                }else {
+                    loginUser(txt_email,txt_pass);
+                }
+            });
     }
-
+    //this is for login
     private void loginUser(String txtEmail, String txtPass) {
         auth.signInWithEmailAndPassword(txtEmail,txtPass).addOnSuccessListener(authResult -> {
             Toast.makeText(LoginActivity.this,"Logged in!", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(LoginActivity.this,HomeActivity.class);
-            startActivity(intent);
-            finish();
-        });
-    }
-
+            startActivity(intent);finish();});}
+    //this is for email validation
     private boolean isValidEmail(String txtEmail) {
         String regex = "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}$";
-        return Pattern.matches(regex, txtEmail);
-    }
+        return Pattern.matches(regex, txtEmail);}
 
+    //this is for internet connection
     private boolean isConnectedToInternet() {
         ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);
-
-        // If the connectivity manager is not available, return false
         if (connectivityManager == null) return false;
-
-        // For devices with API >= 23 (Android M)
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             Network network = connectivityManager.getActiveNetwork();
             if (network == null) return false;
-
             // Get the network capabilities and check if it has internet connectivity
             NetworkCapabilities capabilities = connectivityManager.getNetworkCapabilities(network);
             return capabilities != null && (
                     capabilities.hasTransport(NetworkCapabilities.TRANSPORT_WIFI) ||
                             capabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR) ||
-                            capabilities.hasTransport(NetworkCapabilities.TRANSPORT_ETHERNET)
-            );
+                            capabilities.hasTransport(NetworkCapabilities.TRANSPORT_ETHERNET));
         } else {
             // For devices with API < 23 (older versions)
             android.net.NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();

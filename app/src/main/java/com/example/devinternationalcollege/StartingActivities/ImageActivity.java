@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.devinternationalcollege.R;
 
 public class ImageActivity extends AppCompatActivity {
+    //this is int[] array for carry the all the images
     private final int[] imageDrawables = {
             R.drawable.imf, R.drawable.cg9, R.drawable.cg11, R.drawable.cg12,
             R.drawable.cg8, R.drawable.imfo, R.drawable.imsi, R.drawable.imt, R.drawable.cg10
@@ -24,18 +25,11 @@ public class ImageActivity extends AppCompatActivity {
         ImageView backButton = findViewById(R.id.backButton);
         backButton.setOnClickListener(v -> {
             Intent intent = new Intent(ImageActivity.this, HomeActivity.class);
-            startActivity(intent);
-            finish();
-        });
-
+            startActivity(intent);finish();});
         RecyclerView recyclerView = findViewById(R.id.imageRecyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new ImageAdapter(this, imageDrawables));
-
     }
     @Override
-    public boolean onSupportNavigateUp() {
-        finish(); // Go back to previous (Home) activity
-        return true;
-    }
+    public boolean onSupportNavigateUp() {finish();return true;}
 }

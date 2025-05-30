@@ -19,23 +19,15 @@ public class SplashScreenActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_splash_screen);
         handler = new Handler(Looper.getMainLooper());
-
         runnable = new Runnable() {
             @Override
             public void run() {
                 Intent intent = new Intent(SplashScreenActivity.this, LoginActivity.class);
-                startActivity(intent);
-                finish(); // End splash screen
-            }
-        };
-
+                startActivity(intent);finish(); // End splash screen
+                }};
         // Run after 3 seconds (3000 ms)
         handler.postDelayed(runnable, 3000);
     }
-    protected void onDestroy() {
-        super.onDestroy();
-        if (handler != null && runnable != null) {
-            handler.removeCallbacks(runnable);
-        }
-    }
+    protected void onDestroy() {super.onDestroy();
+        if (handler != null && runnable != null) {handler.removeCallbacks(runnable);}}
 }
