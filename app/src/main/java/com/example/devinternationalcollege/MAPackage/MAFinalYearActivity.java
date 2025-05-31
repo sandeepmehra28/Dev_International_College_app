@@ -14,6 +14,7 @@ public class MAFinalYearActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_mafinal_year);
+        // this is for all the buttons in the activity and their respective pdf files
         setupButton(R.id.geoFinalYearBtn, "mageofinal.pdf");
         setupButton(R.id.polSciFinalYearBtn, "mapolscifinal.pdf");
         setupButton(R.id.engFinalYearBtn, "maenglishfinal.pdf");
@@ -25,6 +26,7 @@ public class MAFinalYearActivity extends AppCompatActivity {
             finish();
         });
     }
+    //when we click any set up button it will open the pdf file
     private void setupButton(int buttonId, String pdfFileName) {
         Button button = findViewById(buttonId);
         button.setOnClickListener(v -> {

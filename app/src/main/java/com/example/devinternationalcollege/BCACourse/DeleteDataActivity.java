@@ -26,17 +26,16 @@ public class DeleteDataActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_delete_data);
-
+       //we assign ids to the buttons and textviews
         etNameToDelete = findViewById(R.id.etNameToDelete);
         btnDelete = findViewById(R.id.btnDelete);
-
+       //create a retrofit instance and set the base url
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("http://192.168.29.110/DevInterCollProject/")
                 .addConverterFactory(ScalarsConverterFactory.create()) // Scalars for plain text
                 .build();
-
+        //create an instance of the DeleteApiInterface using the retrofit instance
         deleteApi = retrofit.create(DeleteApiInterface.class);
-
         btnDelete.setOnClickListener(v -> {
             String name = etNameToDelete.getText().toString().trim().toUpperCase(); // Convert to uppercase
 

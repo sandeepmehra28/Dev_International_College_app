@@ -18,6 +18,8 @@ public class BASemesterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_basemester);
+
+        //set id for buttons and textview
         Button backBtn = findViewById(R.id.backBtn);
         TextView firstSem = findViewById(R.id.semfirst);
         TextView secSem = findViewById(R.id.semSecond);
@@ -39,6 +41,7 @@ public class BASemesterActivity extends AppCompatActivity {
             Intent intent =new Intent(BASemesterActivity.this, BASemesterFourthActivity.class);
             startActivity(intent);
         });
+        //back button
         backBtn.setOnClickListener(view -> {
             Intent intent=new Intent(BASemesterActivity.this, CoursesActivity.class);
             startActivity(intent);finish();});

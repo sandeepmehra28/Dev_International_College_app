@@ -16,6 +16,7 @@ public class BSCFirstActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_bscfirst);
+        //this is for all the buttons in the activity and their respective pdf files
         setupButton(R.id.bscMathFirstYearClick, "bscmathpart1.pdf");
         setupButton(R.id.bscChemFirstYearClick, "bscchemistrypart1.pdf");
         setupButton(R.id.bscPhysFirstYearClick, "bscphysicspart1.pdf");
@@ -29,6 +30,7 @@ public class BSCFirstActivity extends AppCompatActivity {
             finish();
         });
     }
+    //when we click any set up button it will open the pdf file
     private void setupButton(int buttonId, String pdfFileName) {
         Button button = findViewById(buttonId);
         button.setOnClickListener(v -> {

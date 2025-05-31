@@ -47,8 +47,7 @@ public class CoursesActivity extends AppCompatActivity {
         CardView BCOMClick = findViewById(R.id.cardFC_BCOM);
         BCOMClick.setOnClickListener(view -> {
             Intent intent = new Intent(CoursesActivity.this, BCOMAllSubjectsActivity.class);
-            startActivity(intent);
-            finish();});
+            startActivity(intent);});
         //this is for back button to go to previous activity
         Button backBtn = findViewById(R.id.buttonBackintopcourses);
         backBtn.setOnClickListener(view -> {

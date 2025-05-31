@@ -6,6 +6,7 @@ import android.net.Network;
 import android.net.NetworkCapabilities;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -37,27 +38,37 @@ public class LoginActivity extends AppCompatActivity {
         auth= FirebaseAuth.getInstance();
         newRegister.setOnClickListener(view -> {
             Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
-            startActivity(intent);finish();});
+            startActivity(intent);});
         aboutBtn.setOnClickListener(view -> {
             Intent intent =new Intent(LoginActivity.this, AboutActivity.class);
-            startActivity(intent);finish();});
+            startActivity(intent);});
         //this is for login button include some validations
-        logBtn.setOnClickListener(view -> {
-                String txt_email = logemail.getText().toString();
-                String txt_pass = logpassword.getText().toString();
-                if (!isConnectedToInternet()) {
-                    Toast.makeText(LoginActivity.this, "Please connect your internet", Toast.LENGTH_SHORT).show();
-                    return;
-                } else if (txt_email.isEmpty() || txt_pass.isEmpty()) {
-                    Toast.makeText(LoginActivity.this,"Please fill all the fields",Toast.LENGTH_SHORT).show();
-                }else if(!isValidEmail(txt_email)){
-                    Toast.makeText(LoginActivity.this,"please enter a valid email!",Toast.LENGTH_SHORT).show();
-                } else if (txt_pass.length()<6) {
-                    Toast.makeText(LoginActivity.this,"password is too sort!",Toast.LENGTH_SHORT).show();
-                }else {
-                    loginUser(txt_email,txt_pass);
-                }
-            });
+//        logBtn.setOnClickListener(view -> {
+//                String txt_email = logemail.getText().toString();
+//                String txt_pass = logpassword.getText().toString();
+//                if (!isConnectedToInternet()) {
+//                    Toast.makeText(LoginActivity.this, "Please connect your internet", Toast.LENGTH_SHORT).show();
+//                    return;
+//                } else if (txt_email.isEmpty() || txt_pass.isEmpty()) {
+//                    Toast.makeText(LoginActivity.this,"Please fill all the fields",Toast.LENGTH_SHORT).show();
+//                }else if(!isValidEmail(txt_email)){
+//                    Toast.makeText(LoginActivity.this,"please enter a valid email!",Toast.LENGTH_SHORT).show();
+//                } else if (txt_pass.length()<6) {
+//                    Toast.makeText(LoginActivity.this,"password is too sort!",Toast.LENGTH_SHORT).show();
+//                }else {
+//                    loginUser(txt_email,txt_pass);
+//                }
+//            });
+
+        logBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
     //this is for login
     private void loginUser(String txtEmail, String txtPass) {

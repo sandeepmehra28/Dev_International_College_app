@@ -21,6 +21,7 @@ public class MSCYearActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_mscyear);
+        //this is for all the buttons in the activity and their respective pdf files
         setupButton(R.id.MSCPreYearClick, "mscchempre.pdf");
         setupButton(R.id.MSCFinalYearClick, "mscchemfinal.pdf");
         Button backBtn = findViewById(R.id.backBtn);
@@ -33,12 +34,12 @@ public class MSCYearActivity extends AppCompatActivity {
             }
         });
     }
+    //when we click any set up button it will open the pdf file
     private void setupButton(int buttonId, String pdfFileName) {
         Button button = findViewById(buttonId);
         button.setOnClickListener(v -> {
             Intent intent = new Intent(MSCYearActivity.this, MSCAllYearPDFActivity.class);
             intent.putExtra("pdf_file", pdfFileName);  // Pass PDF file name
-            startActivity(intent);
-        });
+            startActivity(intent);});
     }
 }

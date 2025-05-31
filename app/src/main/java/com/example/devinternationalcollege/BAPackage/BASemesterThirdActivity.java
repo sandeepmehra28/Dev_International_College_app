@@ -16,6 +16,7 @@ public class BASemesterThirdActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_basemester_third);
+        //this is for all the buttons in the activity and their respective pdf files
         setupButton(R.id.hindiSem3Btn, "bahindisem3.pdf");
         setupButton(R.id.englishSem3Btn, "baengsem3.pdf");
         setupButton(R.id.geoSem3Btn, "bageosem3and4.pdf");
@@ -35,7 +36,7 @@ public class BASemesterThirdActivity extends AppCompatActivity {
             finish();
         });
     }
-
+//when we click any set up button it will open the pdf file
     private void setupButton(int buttonId, String pdfFileName) {
         Button button = findViewById(buttonId);
         button.setOnClickListener(v -> {

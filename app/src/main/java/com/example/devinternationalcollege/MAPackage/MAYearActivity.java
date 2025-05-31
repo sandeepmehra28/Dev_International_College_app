@@ -21,14 +21,10 @@ public class MAYearActivity extends AppCompatActivity {
         TextView finalYear = findViewById(R.id.FinalYearClick);
         preYear.setOnClickListener(view -> {
             Intent intent =new Intent(MAYearActivity.this, MAPreYearActivity.class);
-            startActivity(intent);
-            finish();
-        });
+            startActivity(intent);});
         finalYear.setOnClickListener(view -> {
             Intent intent = new Intent(MAYearActivity.this, MAFinalYearActivity.class);
-            startActivity(intent);
-            finish();
-        });
+            startActivity(intent);});
         Button backBtnClick = findViewById(R.id.backBtnClick);
         backBtnClick.setOnClickListener(view -> {
             Intent intent =new Intent(MAYearActivity.this, CoursesActivity.class);

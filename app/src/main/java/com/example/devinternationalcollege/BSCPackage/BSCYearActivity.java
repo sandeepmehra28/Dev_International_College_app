@@ -19,6 +19,7 @@ public class BSCYearActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_bscyear);
+        //we assign the id to their respective activities
         TextView firstYear = findViewById(R.id.bscFirstYearClick);
         TextView secondYear = findViewById(R.id.bscSecondYearClick);
         TextView finalYear = findViewById(R.id.bscFinalYearClick);
@@ -26,17 +27,14 @@ public class BSCYearActivity extends AppCompatActivity {
         firstYear.setOnClickListener(view -> {
             Intent intent = new Intent(BSCYearActivity.this, BSCFirstActivity.class);
             startActivity(intent);
-            finish();
         });
         secondYear.setOnClickListener(view -> {
             Intent intent  =new Intent(BSCYearActivity.this, BSCSecondActivity.class);
             startActivity(intent);
-            finish();
         });
         finalYear.setOnClickListener(view -> {
             Intent intent =new Intent(BSCYearActivity.this, BSCFinalActivity.class);
             startActivity(intent);
-            finish();
         });
         backBtn.setOnClickListener(view -> {
             Intent intent = new Intent(BSCYearActivity.this, CoursesActivity.class);

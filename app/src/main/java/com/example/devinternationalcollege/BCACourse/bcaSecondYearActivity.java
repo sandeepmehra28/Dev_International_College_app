@@ -16,6 +16,7 @@ public class bcaSecondYearActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_bca_second_year);
+        //this is for all the buttons in the activity and their respective pdf files
         setupButton(R.id.BCAsecondYearClick, "secondyearsllaybus.pdf");
         setupButton(R.id.BCAsecondYearPracticalClick, "secondyearpractical.pdf");
         Button backBtn = findViewById(R.id.SecondYearBackBtn);
@@ -25,6 +26,7 @@ public class bcaSecondYearActivity extends AppCompatActivity {
             finish();
         });
     }
+    //when we click any set up button it will open the pdf file
     private void setupButton(int buttonId, String pdfFileName) {
         Button button = findViewById(buttonId);
         button.setOnClickListener(v -> {

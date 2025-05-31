@@ -33,6 +33,7 @@ public class BASemesterFirstActivity extends AppCompatActivity {
             Intent intent =new Intent(BASemesterFirstActivity.this, BASemesterActivity.class);
             startActivity(intent);finish();});
     }
+    //when we click any set up button it will open the pdf file
     private void setupButton(int buttonId, String pdfFileName) {
         Button button = findViewById(buttonId);
         button.setOnClickListener(v -> {

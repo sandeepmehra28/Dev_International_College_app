@@ -20,7 +20,7 @@ import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.POST;
 
 public class InsertingDataActivity extends AppCompatActivity {
-
+ //declare variables and button.
     EditText fname, lname, email, mnumber, address, skills;
     Button btnInsert;
 

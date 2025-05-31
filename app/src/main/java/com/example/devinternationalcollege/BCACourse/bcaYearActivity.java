@@ -18,6 +18,7 @@ public class bcaYearActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_bca_year);
+        //we assign ids to the buttons and textviews
         TextView firstYear = findViewById(R.id.firstYearbtn);
         TextView secondYear = findViewById(R.id.secondYearbtn);
         TextView finalYear = findViewById(R.id.finalYearbtn);
@@ -36,7 +37,6 @@ public class bcaYearActivity extends AppCompatActivity {
         });
         backbtn.setOnClickListener(view -> {
             Intent intent =new Intent(bcaYearActivity.this, CoursesActivity.class);
-            startActivity(intent);
-        });
+            startActivity(intent);finish();});
     }
 }

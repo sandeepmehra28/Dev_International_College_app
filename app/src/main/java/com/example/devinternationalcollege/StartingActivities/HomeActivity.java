@@ -20,7 +20,7 @@ public class HomeActivity extends AppCompatActivity {
         //this is find courses button and it will take you to courses activity
         fd.setOnClickListener(view -> {
             Intent intent = new Intent(HomeActivity.this, CoursesActivity.class);
-            startActivity(intent);finish();});
+            startActivity(intent);});
         //this is logout button and it will take you to login activity
         lo.setOnClickListener(view -> {
             Toast.makeText(HomeActivity.this, "Logout", Toast.LENGTH_SHORT).show();
@@ -29,6 +29,6 @@ public class HomeActivity extends AppCompatActivity {
         //this is image button and it will take you to image activity
         img.setOnClickListener(view -> {
             Intent intent = new Intent(HomeActivity.this, ImageActivity.class);
-            startActivity(intent);finish();});
+            startActivity(intent);});
     }
 }
