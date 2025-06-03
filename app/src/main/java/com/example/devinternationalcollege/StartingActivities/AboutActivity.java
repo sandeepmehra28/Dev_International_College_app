@@ -13,11 +13,11 @@ public class AboutActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_about);
-        Button backBtn = findViewById(R.id.backToHome);
-        backBtn.setOnClickListener(view -> {
-            //this is Intent to go to Login Activity
-            Intent intent = new Intent(AboutActivity.this, LoginActivity.class);
-            startActivity(intent);finish();});
+//        Button backBtn = findViewById(R.id.backToHome);
+//        backBtn.setOnClickListener(view -> {
+//            //this is Intent to go to Login Activity
+//            Intent intent = new Intent(AboutActivity.this, LoginActivity.class);
+//            startActivity(intent);finish();});
     }
 }
 //this is about-activity and can they show the logo and welcome message in your screen

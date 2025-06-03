@@ -21,8 +21,8 @@ import java.util.regex.Pattern;
 
 public class LoginActivity extends AppCompatActivity {
     //they are all data member variables
-    Button logBtn,newRegister;
-    TextView aboutBtn;
+    Button logBtn;
+    TextView aboutBtn,newRegister;
     EditText logemail,logpassword;
     FirebaseAuth auth;
     @Override
