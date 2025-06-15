@@ -19,12 +19,6 @@ public class MAPreYearActivity extends AppCompatActivity {
         setupButton(R.id.polSciPreYearBtn, "mapolscipre.pdf");
         setupButton(R.id.engPreYearBtn, "maenglishpre.pdf");
         setupButton(R.id.hindiPreYearBtn, "mahindipre.pdf");
-        Button backBtn = findViewById(R.id.backBtn);
-        backBtn.setOnClickListener(view -> {
-            Intent intent = new Intent(MAPreYearActivity.this, MAYearActivity.class);
-            startActivity(intent);
-            finish();
-        });
     }
     //when we click any set up button it will open the pdf file
     private void setupButton(int buttonId, String pdfFileName) {

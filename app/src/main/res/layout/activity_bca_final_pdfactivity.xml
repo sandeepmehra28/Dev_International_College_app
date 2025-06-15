@@ -2,12 +2,23 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="@string/final_year_syllabus_pdf"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginTop="50sp"
+        />
 
     <com.github.barteksc.pdfviewer.PDFView
         android:id="@+id/pdfViewfinalbca"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="40sp"
-        android:layout_marginBottom="30sp"/>
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="90sp"
+        android:layout_marginBottom="15sp"/>
 
 </RelativeLayout>

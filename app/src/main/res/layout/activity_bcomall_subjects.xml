@@ -15,7 +15,7 @@
     android:src="@drawable/bcom_main_background"
     />
     <TextView
-        android:layout_width="350dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="@string/subjects"
         android:textSize="40sp"
@@ -23,54 +23,65 @@
         android:textColor="#F6CC47"
         android:layout_gravity="center"
         android:gravity="center"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20sp"
         android:layout_marginTop="10dp"/>
    <LinearLayout
        android:orientation="vertical"
        android:layout_gravity="center"
+       android:layout_marginLeft="30sp"
+       android:layout_marginRight="30sp"
+       android:layout_marginBottom="40sp"
        android:background="@drawable/bcom_layout_style"
-       android:layout_width="350dp"
-       android:layout_height="400dp">
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
        <TextView
            android:id="@+id/EAFMClick"
-           android:layout_width="200dp"
+           android:layout_width="match_parent"
            android:layout_height="50dp"
            android:text="@string/eafm"
            android:background="@drawable/bcom_layout_style"
            android:layout_gravity="center"
            android:gravity="center"
-           android:layout_marginTop="20dp"
+           android:layout_marginTop="30dp"
+           android:layout_marginRight="40sp"
+           android:layout_marginLeft="40sp"
            android:textSize="25sp"
            android:textColor="#1CA4ED "
            android:textStyle="bold"
            />
        <TextView
            android:id="@+id/ABSTClick"
-           android:layout_width="200dp"
+           android:layout_width="match_parent"
            android:layout_height="50dp"
            android:text="@string/abst"
            android:background="@drawable/bcom_layout_style"
            android:layout_gravity="center"
            android:gravity="center"
            android:layout_marginTop="10dp"
+           android:layout_marginLeft="40sp"
+           android:layout_marginRight="40sp"
            android:textSize="25sp"
            android:textColor="#1CA4ED"
            android:textStyle="bold"
            />
        <TextView
            android:id="@+id/BADLClick"
-           android:layout_width="200dp"
+           android:layout_width="match_parent"
            android:layout_height="50dp"
            android:text="@string/badl"
            android:background="@drawable/bcom_layout_style"
            android:layout_gravity="center"
            android:gravity="center"
            android:layout_marginTop="10dp"
+           android:layout_marginRight="40sp"
+           android:layout_marginLeft="40sp"
            android:textSize="25sp"
            android:textColor="#1CA4ED"
            android:textStyle="bold"
            />
        <TextView
-           android:layout_width="250dp"
+           android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:text="@string/note_abst_and_badl_not_available_in_this_application"
            android:textColor="#1CA4ED"
@@ -79,19 +90,8 @@
            android:layout_gravity="center"
            android:gravity="center"
            android:layout_marginTop="160sp"
+           android:layout_marginLeft="20sp"
+           android:layout_marginRight="20sp"
            />
    </LinearLayout>
-    <Button
-        android:id="@+id/backBtn"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:backgroundTint="#F6CC47"
-        android:text="@string/back"
-        android:textSize="25sp"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:layout_marginTop="60dp"
-        />
 </LinearLayout>

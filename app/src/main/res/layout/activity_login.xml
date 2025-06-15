@@ -9,11 +9,10 @@
     tools:context=".StartingActivities.LoginActivity">
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40sp"
         android:layout_marginTop="30dp"
         android:text="@string/dev"
-        android:textSize="45sp"
-        android:paddingEnd="240dp"
+        android:textSize="30sp"
         android:textStyle="bold"
         android:textColor="@color/white"
         android:gravity="center"
@@ -21,31 +20,27 @@
         />
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40sp"
         android:text="@string/international"
         android:gravity="center"
-        android:textSize="45sp"
+        android:textSize="30sp"
         android:textColor="@color/white"
         android:textStyle="bold"
-        android:paddingEnd="75dp"
         />
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40sp"
         android:gravity="center"
-        android:paddingEnd="175dp"
         android:text="@string/college"
         android:textColor="@color/white"
-        android:textSize="45sp"
+        android:textSize="30sp"
         android:textStyle="bold" />
     <ImageView
         android:layout_width="60dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:contentDescription="@string/todo"
-        android:src="@drawable/college_icon_logo"
-        android:layout_marginEnd="120dp"
-        />
+        android:src="@drawable/college_icon_logo" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -71,7 +66,7 @@
         <EditText
             android:id="@+id/LoginUsername"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="40dp"
             android:layout_gravity="center"
             android:layout_marginLeft="30sp"
             android:layout_marginTop="30dp"
@@ -81,12 +76,12 @@
             android:hint="@string/email"
             android:textColor="#0672DF"
             android:textColorHint="#0672DF"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:textStyle="bold" />
         <EditText
             android:id="@+id/LoginPassword"
             android:layout_width="match_parent"
-            android:layout_height="43dp"
+            android:layout_height="40sp"
             android:layout_gravity="center"
             android:layout_marginLeft="30sp"
             android:layout_marginTop="30dp"
@@ -97,54 +92,44 @@
             android:importantForAutofill="no"
             android:textColor="#0672DF"
             android:textColorHint="#0672DF"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:textStyle="bold" />
         <Button
             android:id="@+id/buttonLogin"
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="50sp"
+            android:layout_marginRight="50sp"
+            android:layout_marginLeft="50sp"
             android:backgroundTint="#0672DF"
             android:gravity="center"
             android:layout_gravity="center"
             android:text="@string/login"
             android:textSize="15sp"
             android:textStyle="bold" />
-        <LinearLayout
+
+        <Button
+            android:id="@+id/textView3newUser"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:padding="8dp">
-
-            <Button
-                android:id="@+id/textView3newUser"
-                android:layout_width="0dp"
-                android:layout_height="50dp"
-                android:layout_marginEnd="9dp"
-                android:layout_weight="1"
-                android:text="@string/new_register"
-                android:textColor="@color/white"
-                android:backgroundTint="#0672DF"
-                android:textSize="15sp"
-                android:textStyle="bold" />
-            <Button
-                android:id="@+id/aboutClick"
-                android:layout_width="0dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="8dp"
-                android:layout_weight="1"
-                android:text="@string/about_us"
-                android:textColor="@color/white"
-                android:backgroundTint="#0672DF"
-                android:textSize="15sp"
-                android:textStyle="bold" />
-
-        </LinearLayout>
-
+            android:layout_height="40dp"
+            android:backgroundTint="#0672DF"
+            android:text="@string/new_register"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="70sp"
+            android:layout_marginRight="70sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/aboutClick"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:backgroundTint="#0672DF"
+            android:text="@string/about_us"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
     </LinearLayout>
-
-
-
 </LinearLayout>

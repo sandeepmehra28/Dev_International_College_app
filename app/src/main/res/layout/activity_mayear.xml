@@ -14,8 +14,8 @@
     android:src="@drawable/ma_year_background_image"
     />
     <TextView
-        android:layout_width="250dp"
-        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="@string/year"
         android:layout_gravity="center"
         android:gravity="center"
@@ -25,9 +25,11 @@
         android:textColor="#3C67E3"/>
     <TextView
         android:id="@+id/PreYearClick"
-        android:layout_width="250dp"
-        android:layout_height="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
         android:layout_marginTop="100dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
         android:text="@string/pre_year"
         android:textColor="#E53935"
         android:background="@drawable/ma_layout_style"
@@ -38,9 +40,11 @@
         />
     <TextView
         android:id="@+id/FinalYearClick"
-        android:layout_width="250dp"
-        android:layout_height="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
         android:layout_marginTop="40dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
         android:text="@string/final_year"
         android:textColor="#E53935"
         android:background="@drawable/ma_layout_style"
@@ -51,9 +55,11 @@
         />
     <Button
         android:id="@+id/backBtnClick"
-        android:layout_width="150dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
         android:text="@string/back"
         android:textSize="20sp"
         android:layout_gravity="center"

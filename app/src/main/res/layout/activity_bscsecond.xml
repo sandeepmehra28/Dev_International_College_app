@@ -19,14 +19,17 @@
         android:layout_marginTop="50dp"/>
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="110dp"
+        android:layout_height="120dp"
         android:src="@drawable/bsc_all_year_image"/>
     <LinearLayout
         android:layout_gravity="center"
         android:background="@drawable/bsc_all_year_layout_style"
         android:orientation="vertical"
-        android:layout_width="350dp"
-        android:layout_height="450dp">
+        android:layout_marginRight="30sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginBottom="40sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -39,21 +42,25 @@
             android:textStyle="bold" />
         <Button
             android:id="@+id/bscMathSecondYearClick"
-            android:layout_width="250dp"
+            android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_marginTop="10dp"
             android:text="@string/mathematics"
             android:textAllCaps="true"
             android:textSize="15sp"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
             android:textColor="@color/white"
             android:backgroundTint="#E74C3C"
             android:layout_gravity="center"
             android:gravity="center"/>
         <Button
             android:id="@+id/bscChemSecondYearClick"
-            android:layout_width="250dp"
+            android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_marginTop="5dp"
+            android:layout_marginRight="30sp"
+            android:layout_marginLeft="30sp"
             android:text="@string/chemistry"
             android:textAllCaps="true"
             android:textSize="15sp"
@@ -63,9 +70,11 @@
             android:gravity="center"/>
         <Button
             android:id="@+id/bscPhysSecondYearClick"
-            android:layout_width="250dp"
+            android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_marginTop="5dp"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
             android:text="@string/physics"
             android:textSize="15sp"
             android:textColor="@color/white"
@@ -84,9 +93,11 @@
             android:layout_marginTop="25sp"/>
         <Button
             android:id="@+id/bscBotSecondYearClick"
-            android:layout_width="250dp"
+            android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_marginTop="10dp"
+            android:layout_marginRight="30sp"
+            android:layout_marginLeft="30sp"
             android:text="@string/botany"
             android:textAllCaps="true"
             android:textSize="15sp"
@@ -96,9 +107,11 @@
             android:gravity="center" />
         <Button
             android:id="@+id/bscChem2SecondYearClick"
-            android:layout_width="250dp"
+            android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_marginTop="5dp"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
             android:text="@string/chemistry"
             android:textAllCaps="true"
             android:textSize="15sp"
@@ -110,9 +123,11 @@
         />
         <Button
             android:id="@+id/bscZooSecondYearClick"
-            android:layout_width="250dp"
+            android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_marginTop="5dp"
+            android:layout_marginRight="30sp"
+            android:layout_marginLeft="30sp"
             android:text="@string/zoology"
             android:textAllCaps="true"
             android:textSize="15sp"
@@ -122,15 +137,4 @@
             android:gravity="center"
             />
     </LinearLayout>
-    <Button
-        android:id="@+id/backBtn"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="@string/back"
-        android:textSize="20sp"
-        android:layout_marginTop="120dp"
-        android:backgroundTint="#3BC9DB"
-        />
 </LinearLayout>

@@ -20,12 +20,6 @@ public class BSCSecondActivity extends AppCompatActivity {
         setupButton(R.id.bscBotSecondYearClick, "bscbotanypart2.pdf");
         setupButton(R.id.bscChem2SecondYearClick, "bscchemistrypart2.pdf");
         setupButton(R.id.bscZooSecondYearClick, "bsczoologypart2.pdf");
-        Button backBtn = findViewById(R.id.backBtn);
-        backBtn.setOnClickListener(view -> {
-            Intent intent = new Intent(BSCSecondActivity.this, BSCYearActivity.class);
-            startActivity(intent);
-            finish();
-        });
     }
     //when we click any set up button it will open the pdf file
     private void setupButton(int buttonId, String pdfFileName) {

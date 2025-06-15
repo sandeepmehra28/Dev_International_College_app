@@ -21,12 +21,8 @@ public class BCOMAllSubjectsActivity extends AppCompatActivity {
         TextView EAFMClick = findViewById(R.id.EAFMClick);
         TextView ABSTClick = findViewById(R.id.ABSTClick);
         TextView BADLClick = findViewById(R.id.BADLClick);
-        Button backBtn = findViewById(R.id.backBtn);
         EAFMClick.setOnClickListener(view -> {
             Intent intent =new Intent(BCOMAllSubjectsActivity.this, EAFMSemesterActivity.class);
             startActivity(intent);});
-        backBtn.setOnClickListener(view -> {
-            Intent intent = new Intent(BCOMAllSubjectsActivity.this, CoursesActivity.class);
-            startActivity(intent);finish();});
     }
 }

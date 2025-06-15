@@ -10,10 +10,12 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_marginTop="50sp"
-        android:layout_width="350dp"
+        android:layout_width="match_parent"
         android:layout_gravity="center"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
         android:background="@drawable/inserting_data_layout_style"
-        android:layout_height="650dp">
+        android:layout_height="550dp">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -26,11 +28,11 @@
             />
         <EditText
             android:id="@+id/etFname"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="50dp"
             android:layout_marginRight="20sp"
             android:layout_marginLeft="20sp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40sp"
             android:hint="@string/first_name"
             android:layout_gravity="center"
             android:gravity="center"
@@ -38,11 +40,11 @@
             android:inputType="textPersonName"/>
         <EditText
             android:id="@+id/etLname"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10sp"
             android:layout_marginRight="20sp"
             android:layout_marginLeft="20sp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40sp"
             android:hint="@string/last_name"
             android:layout_gravity="center"
             android:gravity="center"
@@ -50,11 +52,11 @@
             android:inputType="textPersonName"/>
         <EditText
             android:id="@+id/etEmail"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="20sp"
             android:layout_marginLeft="20sp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40sp"
             android:hint="@string/sssss"
             android:layout_gravity="center"
             android:gravity="center"
@@ -62,11 +64,11 @@
             android:inputType="textPersonName"/>
         <EditText
             android:id="@+id/etMnumber"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="20sp"
             android:layout_marginLeft="20sp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40sp"
             android:hint="@string/mobile_number"
             android:layout_gravity="center"
             android:gravity="center"
@@ -74,11 +76,11 @@
             android:inputType="textPersonName"/>
         <EditText
             android:id="@+id/etAddress"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="20sp"
             android:layout_marginLeft="20sp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40sp"
             android:hint="@string/address"
             android:layout_gravity="center"
             android:gravity="center"
@@ -86,11 +88,11 @@
             android:inputType="textPersonName"/>
         <EditText
             android:id="@+id/etSkills"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="20sp"
             android:layout_marginLeft="20sp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40sp"
             android:hint="@string/skills"
             android:layout_gravity="center"
             android:gravity="center"
@@ -106,11 +108,11 @@
             android:backgroundTint="#613CA2"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp"
-            android:layout_marginTop="80dp"/>
+            android:layout_marginTop="40dp"/>
     </LinearLayout>
     <ImageView
-        android:layout_width="250dp"
-        android:layout_height="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_gravity="center"
         android:contentDescription="@string/aaa"
         android:src="@drawable/inserting_images"

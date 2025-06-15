@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="35dp"
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="12dp"
         android:text="@string/top_courses"
@@ -252,19 +252,6 @@
                     android:textColor="@color/white"
                     android:textStyle="bold" />
             </LinearLayout>
-
         </androidx.cardview.widget.CardView>
-
     </GridLayout>
-    <Button
-        android:id="@+id/buttonBackintopcourses"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="15dp"
-        android:text="@string/back"
-        android:backgroundTint="#4792DF"
-        android:textColor="@color/white"
-        android:textStyle="bold" />
 </RelativeLayout>

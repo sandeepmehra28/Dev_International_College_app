@@ -114,4 +114,7 @@
     <string name="hindi_lit">Hindi-Lit</string>
     <string name="final_yearsdf">FINAL-YEAR</string>
     <string name="new_register">New Register</string>
+    <string name="first_year_syllabus_pdf">First-Year-Syllabus-PDF</string>
+    <string name="second_year_syllabus_pdf">Second-Year-Syllabus_PDF</string>
+    <string name="final_year_syllabus_pdf">Final-Year-Syllabus-PDF</string>
 </resources>
