@@ -28,12 +28,6 @@ public class BASemesterSecondActivity extends AppCompatActivity {
         setupButton(R.id.phyEduSem2Btn, "baphysicaleducation1and2.pdf");
         setupButton(R.id.englishSem2Btn, "baenglish2.pdf");
         setupButton(R.id.drawandpaintSem2Btn, "badrawingandpainting1and2.pdf");
-        Button backBtn2 = findViewById(R.id.backBtn2Subjects);
-        backBtn2.setOnClickListener(view -> {
-            Intent intent =new Intent(BASemesterSecondActivity.this, BASemesterActivity.class);
-            startActivity(intent);
-            finish();
-        });
     }
     //when we click any set up button it will open the pdf file
     private void setupButton(int buttonId, String pdfFileName) {

@@ -20,15 +20,18 @@
     <LinearLayout
         android:orientation="vertical"
         android:background="@drawable/ba_layout_style"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="40sp"
+        android:layout_marginLeft="40sp"
         android:layout_gravity="center"
-        android:layout_width="330dp"
-        android:layout_height="500dp">
+        android:layout_marginBottom="40sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
         <TextView
             android:id="@+id/semfirst"
-            android:layout_width="250dp"
+            android:layout_width="match_parent"
             android:layout_height="40sp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="30dp"
             android:layout_gravity="center"
             android:gravity="center"
             android:background="@drawable/ba_layout_style"
@@ -42,7 +45,7 @@
             />
         <TextView
             android:id="@+id/semSecond"
-            android:layout_width="250dp"
+            android:layout_width="match_parent"
             android:layout_height="40sp"
             android:layout_marginTop="15dp"
             android:layout_gravity="center"
@@ -58,7 +61,7 @@
             />
         <TextView
             android:id="@+id/semThird"
-            android:layout_width="250dp"
+            android:layout_width="match_parent"
             android:layout_height="40sp"
             android:layout_marginTop="15dp"
             android:layout_gravity="center"
@@ -74,7 +77,7 @@
             />
         <TextView
             android:id="@+id/semfourth"
-            android:layout_width="250dp"
+            android:layout_width="match_parent"
             android:layout_height="40sp"
             android:layout_marginTop="15dp"
             android:layout_gravity="center"
@@ -90,7 +93,7 @@
             />
         <TextView
             android:id="@+id/semfifth"
-            android:layout_width="250dp"
+            android:layout_width="match_parent"
             android:layout_height="40sp"
             android:layout_marginTop="15dp"
             android:layout_gravity="center"
@@ -106,13 +109,13 @@
             />
         <TextView
             android:id="@+id/semSixth"
-            android:layout_width="250dp"
+            android:layout_width="match_parent"
             android:layout_height="40sp"
             android:layout_marginTop="15dp"
             android:layout_gravity="center"
             android:gravity="center"
             android:background="@drawable/ba_layout_style"
-            android:text="SEMESTER-SIXTH"
+            android:text="@string/semester_sixth_g"
             android:textAlignment="center"
             android:textSize="15sp"
             android:textStyle="bold"
@@ -123,7 +126,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="120dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="20sp"
             android:text="@string/note_semester_fifth_and_sixth_not_available"
             android:textColor="@color/black"
             android:textStyle="italic"
@@ -132,14 +136,16 @@
             android:gravity="center"
             />
     </LinearLayout>
+
     <Button
         android:id="@+id/backBtn"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:gravity="center"
-        android:layout_marginTop="70dp"
-        android:text="@string/back"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="80dp"
         android:backgroundTint="#920333"
-        />
+        android:gravity="center"
+        android:text="@string/back" />
 </LinearLayout>

@@ -117,4 +117,9 @@
     <string name="first_year_syllabus_pdf">First-Year-Syllabus-PDF</string>
     <string name="second_year_syllabus_pdf">Second-Year-Syllabus_PDF</string>
     <string name="final_year_syllabus_pdf">Final-Year-Syllabus-PDF</string>
+    <string name="semester_sixth_g">SEMESTER-SIXTH</string>
+    <string name="cdev">DEV</string>
+    <string name="internationalSDFH">INTERNATIONAL</string>
+    <string name="sdfsg">COLLEGE</string>
+    <string name="submit">Submit</string>
 </resources>

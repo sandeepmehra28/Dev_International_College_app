@@ -29,12 +29,6 @@ public class BASemesterThirdActivity extends AppCompatActivity {
         setupButton(R.id.PolSciSem3Btn, "bapoliticalscience3and4.pdf");
         setupButton(R.id.phyEduSem3Btn, "baphysicaleducation3and4.pdf");
         setupButton(R.id.drawandpaintSem3Btn, "badrawingandpainting3and4.pdf");
-        Button backBtn3 = findViewById(R.id.backBtn3Subjects);
-        backBtn3.setOnClickListener(view -> {
-            Intent intent =new Intent(BASemesterThirdActivity.this, BASemesterActivity.class);
-            startActivity(intent);
-            finish();
-        });
     }
 //when we click any set up button it will open the pdf file
     private void setupButton(int buttonId, String pdfFileName) {

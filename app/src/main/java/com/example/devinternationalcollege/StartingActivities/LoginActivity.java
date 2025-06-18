@@ -63,6 +63,7 @@ public class LoginActivity extends AppCompatActivity {
         logBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Toast.makeText(LoginActivity.this,"Welcome to Dev International College.", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
                 startActivity(intent);
             }
@@ -73,7 +74,7 @@ public class LoginActivity extends AppCompatActivity {
     //this is for login
     private void loginUser(String txtEmail, String txtPass) {
         auth.signInWithEmailAndPassword(txtEmail,txtPass).addOnSuccessListener(authResult -> {
-            Toast.makeText(LoginActivity.this,"Logged in!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(LoginActivity.this,"Welcome to Dev International College.", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(LoginActivity.this,HomeActivity.class);
             startActivity(intent);finish();});}
     //this is for email validation
