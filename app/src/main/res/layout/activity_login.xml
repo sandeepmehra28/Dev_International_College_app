@@ -128,7 +128,7 @@
                 android:textColor="@color/white"
                 android:backgroundTint="#0672DF"
                 android:text="@string/new_register"
-                android:textSize="13sp" />
+                android:textSize="11sp" />
             <Button
                 android:id="@+id/aboutClick"
                 android:layout_width="0dp"
@@ -139,7 +139,7 @@
                 android:backgroundTint="#0672DF"
                 android:text="@string/about_us"
                 android:textColor="@color/white"
-                android:textSize="13sp" />
+                android:textSize="11sp" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

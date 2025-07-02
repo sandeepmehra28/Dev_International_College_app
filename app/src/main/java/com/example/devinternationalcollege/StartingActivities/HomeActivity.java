@@ -1,7 +1,9 @@
 package com.example.devinternationalcollege.StartingActivities;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
@@ -30,5 +32,18 @@ public class HomeActivity extends AppCompatActivity {
         img.setOnClickListener(view -> {
             Intent intent = new Intent(HomeActivity.this, ImageActivity.class);
             startActivity(intent);});
+    }
+    public void openMapLink(View view) {
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://maps.app.goo.gl/14eyytwiWSB9hy5B9"));
+        startActivity(intent);
+    }
+    public void openUniversityLink(View view) {
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.univindia.org/ALWARUNIV/"));
+        startActivity(intent);
+    }
+
+    public void openPaperLink(View view) {
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.rrbmuonline.com/"));
+        startActivity(intent);
     }
 }

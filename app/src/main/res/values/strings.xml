@@ -122,4 +122,8 @@
     <string name="internationalSDFH">INTERNATIONAL</string>
     <string name="sdfsg">COLLEGE</string>
     <string name="submit">Submit</string>
+    <string name="dev_international_college_map_https_maps_app_goo_gl_14eyytwiwsb9hy5b9">📍 Dev International College Map: https://maps.app.goo.gl/14eyytwiWSB9hy5B9</string>
+    <string name="dev_college_map">Dev College Map</string>
+    <string name="university_panel">University Panel</string>
+    <string name="question_papers">Question Papers</string>
 </resources>

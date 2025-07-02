@@ -70,4 +70,44 @@
         android:backgroundTint="@color/white"
         android:text="@string/logout"
         android:textColor="#2988D9"/>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/mapLogo"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/college_map_logo"
+            android:contentDescription="@string/dev_college_map"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="openMapLink" />
+
+        <ImageView
+            android:id="@+id/univLogo"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/univercity_logo"
+            android:contentDescription="@string/university_panel"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="openUniversityLink" />
+
+        <ImageView
+            android:id="@+id/paperLogo"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:src="@drawable/question_paper_logo"
+            android:contentDescription="@string/question_papers"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="openPaperLink" />
+    </LinearLayout>
 </LinearLayout>

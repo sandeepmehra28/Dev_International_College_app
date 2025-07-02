@@ -97,7 +97,7 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:textColor="#FFFF"
-            android:textSize="25sp"
+            android:textSize="15sp"
             android:textStyle="bold" />
         <TextView
             android:id="@+id/textViewExistingUser"
