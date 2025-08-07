@@ -43,7 +43,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void openPaperLink(View view) {
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.rrbmuonline.com/"));
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.uoronline.com/bca.html#google_vignette"));
         startActivity(intent);
     }
 }
